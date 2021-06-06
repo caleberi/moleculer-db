@@ -82,7 +82,13 @@ class MongoDbAdapter {
 		}
 		return Promise.resolve();
 	}
-
+	/**
+	* Get current database model connection  for futher service useage
+	*/
+	getDb(){
+		return this.db;
+	}
+	
 	/**
 	 * Find all entities by filters.
 	 *
